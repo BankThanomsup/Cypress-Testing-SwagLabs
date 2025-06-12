@@ -20,13 +20,27 @@ Cypress-Testing-SwagLabs/
 git clone https://github.com/BankThanomsup/Cypress-Testing-SwagLabs.git
 cd Cypress-Testing-SwagLabs
 
-1. Install dependencies
-```bash
+2. Install dependencies
+
 npm install
 
 3. Run Cypress Test Runner
-```bash
+
 npx cypress open
 
 
-You can choose to run E2E tests via Cypress GUI.
+🧪 What We Test
+✅ Login functionality
+
+✅ Viewing product list
+
+✅ Adding/removing items in the cart
+
+✅ Navigating through pages
+
+🛠 Tools Used
+Cypress - End-to-end testing framework
+
+Mocha - Test structure (describe, it)
+
+Chai - Assertions (expect)
