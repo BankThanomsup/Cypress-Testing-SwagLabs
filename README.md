@@ -19,15 +19,17 @@ Cypress-Testing-SwagLabs/
 ```bash
 git clone https://github.com/BankThanomsup/Cypress-Testing-SwagLabs.git
 cd Cypress-Testing-SwagLabs
+\```
 
 2. Install dependencies
-
+```bash
 npm install
+\```bash
 
 3. Run Cypress Test Runner
-
+```bash
 npx cypress open
-
+\```bash
 
 🧪 What We Test
 ✅ Login functionality
