@@ -1,10 +1,10 @@
-import { loginStandardUserAndAddAllToCart } from "../../support/StandardUserLogin_And_Cart";
+import { loginVisualUserAndAddAllToCart } from "../../support/VisualUserLoginAndCart";
 
-describe("Standard User - Add to Cart and Checkout Flow", () => {
+describe("Visual User - Add to Cart and Checkout Flow", () => {
   // ทำก่อนทุก test case
   beforeEach(() => {
     cy.clearLocalStorage();
-    loginStandardUserAndAddAllToCart();
+    loginVisualUserAndAddAllToCart();
   });
 
   it("TC-001: Should add all products to cart", () => {

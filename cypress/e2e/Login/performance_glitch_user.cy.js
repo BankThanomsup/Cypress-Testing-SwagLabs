@@ -1,12 +1,10 @@
-import { loginStandardUserAndAddAllToCart } from "../../support/StandardUserLogin_And_Cart";
+import { loginPerformanceGlitchUserAndAddAllToCart } from "../../support/PerformanceGlitchUserLogin";
 
-describe("Standard User - Add to Cart and Checkout Flow", () => {
-  // ทำก่อนทุก test case
+describe("Performance Glitch User - Add to Cart and Checkout Flow", () => {
   beforeEach(() => {
     cy.clearLocalStorage();
-    loginStandardUserAndAddAllToCart();
+    loginPerformanceGlitchUserAndAddAllToCart();
   });
-
   it("TC-001: Should add all products to cart", () => {
     // ตรวจสอบว่ามี 6 สินค้าใน inventory
     cy.get(".inventory_item").should("have.length", 6);
@@ -74,4 +72,9 @@ describe("Standard User - Add to Cart and Checkout Flow", () => {
 
     cy.url().should("include", "/inventory.html");
   });
+
+
+
+
+
 });

@@ -1,13 +1,13 @@
 import { loginProblemUserAndAddAllToCart } from "../../support/ProblemUserLogin_And_Cart";
 
-describe("Cart Page", () => {
+describe("Problem User - Add to Cart and Checkout Flow", () => {
   // ทำก่อนทุก test case
   beforeEach(() => {
     cy.clearLocalStorage();
     loginProblemUserAndAddAllToCart();
   });
 
-  it("TC-001: problem_user should login successfully and add all 6 items to cart, but actually only 3 added", () => {
+  it("TC-001: problem_user logs in successfully but fails to add all items to cart as clicked", () => {
     // ตรวจสอบจำนวนไอเท็มบนหน้าร้านยังคง 6 ชิ้น
     cy.get(".inventory_item").should("have.length", 6);
 
